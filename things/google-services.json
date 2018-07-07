@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "835790617606",
+    "firebase_url": "https://grayson-2f21a.firebaseio.com",
+    "project_id": "grayson-2f21a",
+    "storage_bucket": "grayson-2f21a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835790617606:android:b416553721a8c9b3",
+        "android_client_info": {
+          "package_name": "com.example.root.grayson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835790617606-k08h4enhjkr8e60bbfkcuhrb06mf506v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.grayson",
+            "certificate_hash": "7bcba476537af3b12db7bdcd1981fbca9d94e432"
+          }
+        },
+        {
+          "client_id": "835790617606-mp5vi2cb7e73jfnmms3jado63a0h5j1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3TIs5aosLiWgxx8zksiWD_5RcBWE4tY8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835790617606-mp5vi2cb7e73jfnmms3jado63a0h5j1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

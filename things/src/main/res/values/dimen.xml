@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="left_margin_data">16dp</dimen>
+    <dimen name="top_margin_media_data">8dp</dimen>
+    <dimen name="bottom_margin_media_data">8dp</dimen>
+    <dimen name="right_margin_media_data">8dp</dimen>
+    <dimen name="left_margin_duration">8dp</dimen>
+    <dimen name="weather_horizontal_margin">3dp</dimen>
+    <dimen name="date_text">21sp</dimen>
+    <dimen name="clock_text_size">34sp</dimen>
+    <dimen name="clock_text_small">34sp</dimen>
+    <dimen name="main_padding">8dp</dimen>
+    <dimen name="main_margin">8dp</dimen>
+    <dimen name="main_margin_half">4dp</dimen>
+    <dimen name="text_padding">4dp</dimen>
+    <dimen name="divider_vertical_margin">3dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+</resources>

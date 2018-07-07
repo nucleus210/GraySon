@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".musicplayer.MusicPlayerFragment"
+    tools:ignore="Overdraw">
+
+    <MediaController
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:focusable="true"
+        android:focusableInTouchMode="false" />
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/OneFourTransparent"
+        tools:ignore="Overdraw">
+
+        <LinearLayout
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin_media_data"
+            android:layout_marginBottom="@dimen/bottom_margin_media_data"
+            android:layout_toEndOf="@id/playing_image"
+            android:orientation="horizontal"
+            android:paddingStart="21dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp">
+
+            <TextView
+                android:id="@+id/count_down_timer"
+                style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:text="@string/time" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/Base.Widget.AppCompat.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/timer"
+                style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:text="@string/time" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/playing_image"
+            android:layout_width="89dp"
+            android:layout_height="89dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:contentDescription="@string/todo"
+            android:padding="@dimen/main_padding"
+            android:scaleType="centerInside"
+            android:src="@drawable/gold_vinyl_record_png_clip_art_image_sec" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            style="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/song_title"
+            android:layout_marginStart="@dimen/left_margin_data"
+            android:layout_marginTop="@dimen/top_margin_media_data"
+            android:layout_marginEnd="@dimen/right_margin_media_data"
+            android:layout_toStartOf="@id/previous_button"
+            android:layout_toEndOf="@id/playing_image"
+            android:elevation="6dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/song_artist"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/song_title"
+            style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/left_margin_data"
+            android:layout_marginBottom="@dimen/bottom_margin_media_data"
+            android:layout_toStartOf="@id/previous_button"
+            android:layout_toEndOf="@id/playing_image"
+            android:elevation="4dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/song_title"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorText" />
+
+        <ImageButton
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/play_pause_button"
+            android:layout_alignBottom="@id/play_pause_button"
+            android:layout_toStartOf="@+id/play_pause_button"
+            android:background="@color/transparent"
+            android:contentDescription="@string/todo"
+            android:elevation="8dp"
+            android:src="@drawable/ic_skip_previous_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/play_pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seek_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="@dimen/top_margin_media_data"
+            android:layout_marginRight="34dp"
+            android:background="@color/transparent"
+            android:contentDescription="@string/todo"
+            android:elevation="4dp"
+            android:src="@drawable/ic_play_arrow_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/play_pause_button"
+            android:layout_alignBottom="@id/play_pause_button"
+            android:layout_toEndOf="@+id/play_pause_button"
+            android:background="@color/transparent"
+            android:contentDescription="@string/todo"
+            android:elevation="8dp"
+            android:src="@drawable/ic_skip_next_white_24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

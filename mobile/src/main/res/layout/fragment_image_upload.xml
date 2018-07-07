@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ImageUploadFragment">
+
+    <ImageView
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/image_container" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_container"
+        android:background="@color/transparentLayout"
+        android:padding="@dimen/text_padding">
+
+        <Button
+            android:id="@+id/image_send"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparentButton"
+            android:text="@string/image_send"
+            android:textColor="@color/colorText" />
+
+        <View
+            android:id="@+id/divider_horizontal"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_send"
+            android:layout_alignBottom="@id/image_send"
+            android:layout_toStartOf="@id/image_send"
+            android:background="@color/transparentLayout" />
+
+        <Button
+            android:id="@+id/image_pick_new"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider_horizontal"
+            android:background="@color/transparentButton"
+            android:text="@string/image_pick"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

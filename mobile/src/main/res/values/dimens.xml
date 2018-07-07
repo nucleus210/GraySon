@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin">24dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="main_top_margin">8dp</dimen>
+    <dimen name="main_bottom_margin">8dp</dimen>
+    <dimen name="main_vertical_margin">8dp</dimen>
+    <dimen name="main_horizontal_margin">8dp</dimen>
+    <dimen name="main_padding">8dp</dimen>
+    <dimen name="main_margin">8dp</dimen>
+</resources>

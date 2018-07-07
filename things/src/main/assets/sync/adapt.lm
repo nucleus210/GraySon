@@ -1,0 +1,578 @@
+\data\
+ngram 1=95
+ngram 2=226
+ngram 3=245
+
+\1-grams:
+-0.9983 </s> -0.3010
+-0.9983 <s> -0.2291
+-3.0069 a -0.2980
+-2.4048 account -0.2551
+-3.0069 active -0.2551
+-3.0069 all -0.2959
+-3.0069 are -0.3006
+-3.0069 assistant -0.2551
+-3.0069 automatically -0.2993
+-2.7059 back -0.2541
+-3.0069 backward -0.2551
+-2.7059 blue -0.2976
+-1.9277 bluetooth -0.2920
+-3.0069 browser -0.2551
+-3.0069 cancel -0.2959
+-2.4048 change -0.2911
+-2.7059 check -0.2993
+-3.0069 city -0.2551
+-3.0069 clear -0.3006
+-3.0069 close -0.2993
+-2.4048 cloud -0.2924
+-3.0069 color -0.2993
+-3.0069 coming -0.3006
+-3.0069 connect -0.2985
+-3.0069 connected -0.2551
+-3.0069 date -0.2551
+-2.2287 day -0.2517
+-3.0069 days -0.2551
+-2.5298 devices -0.2551
+-3.0069 dim -0.2985
+-3.0069 discovery -0.2980
+-2.7059 download -0.2993
+-3.0069 e-mail -0.2551
+-2.7059 forecast -0.2541
+-3.0069 forward -0.2551
+-2.7059 from -0.2967
+-2.5298 go -0.2959
+-2.2287 google -0.2527
+-2.7059 gray -0.2551
+-2.7059 green -0.2976
+-3.0069 grey -0.2551
+-3.0069 hide -0.2967
+-2.7059 in -0.2933
+-2.4048 is -0.2902
+-3.0069 it -0.2551
+-3.0069 last -0.2993
+-2.1038 lighting -0.2551
+-2.2287 lights -0.2489
+-3.0069 location -0.2551
+-3.0069 map -0.2993
+-2.5298 me -0.2959
+-2.0069 menu -0.2474
+-2.2287 music -0.2517
+-2.2287 next -0.2430
+-2.4048 of -0.2493
+-2.2287 off -0.2503
+-1.8608 ok -0.2831
+-2.5298 okay -0.2946
+-2.1618 on -0.2503
+-2.7059 open -0.2989
+-3.0069 out -0.2985
+-3.0069 pair -0.2959
+-3.0069 pairing -0.2551
+-2.1618 photo -0.2532
+-3.0069 pk -0.2976
+-2.1038 play -0.2831
+-2.1618 player -0.2551
+-2.4048 please -0.2915
+-2.2287 previous -0.2450
+-2.7059 red -0.2976
+-2.7059 select -0.2541
+-3.0069 settings -0.2551
+-2.0069 show -0.2836
+-2.7059 shutdown -0.2902
+-2.7059 sing -0.2997
+-3.0069 some -0.2985
+-2.1038 song -0.2551
+-2.4048 start -0.2928
+-2.1038 stop -0.2814
+-2.3079 switch -0.2959
+-3.0069 tasks -0.2993
+-2.7059 tell -0.2997
+-1.9277 the -0.2809
+-2.5298 time -0.2532
+-2.2287 turn -0.2902
+-3.0069 unpair -0.2959
+-2.7059 upload -0.2993
+-1.8930 video -0.2517
+-3.0069 visible -0.2551
+-3.0069 wakeup -0.2551
+-2.3079 weather -0.2532
+-2.5298 what -0.2976
+-2.4048 window -0.2551
+-3.0069 you -0.2551
+-3.0069 youtube -0.2551
+
+\2-grams:
+-2.3096 <s> automatically 0.0000
+-2.3096 <s> backward 0.0000
+-2.3096 <s> blue 0.0000
+-1.7076 <s> bluetooth -0.1761
+-2.3096 <s> cancel 0.0000
+-1.8325 <s> change -0.0969
+-2.0086 <s> check 0.0000
+-2.3096 <s> clear 0.0000
+-2.3096 <s> close 0.0000
+-2.3096 <s> connect 0.0000
+-2.3096 <s> dim 0.0000
+-2.0086 <s> download 0.0000
+-2.3096 <s> forward 0.0000
+-1.8325 <s> go 0.0000
+-2.3096 <s> google -0.2632
+-2.3096 <s> green 0.0000
+-2.3096 <s> hide 0.0000
+-2.3096 <s> last 0.0000
+-2.0086 <s> lights -0.1249
+-1.7076 <s> menu -0.1461
+-1.8325 <s> next -0.1249
+-1.1635 <s> ok 0.0000
+-1.8325 <s> okay 0.0000
+-2.0086 <s> open 0.0000
+-2.3096 <s> pair 0.0000
+-2.3096 <s> pk 0.0000
+-1.8325 <s> play -0.1761
+-1.7076 <s> please 0.0000
+-2.0086 <s> previous -0.1249
+-2.3096 <s> red 0.0000
+-2.3096 <s> select -0.1761
+-2.3096 <s> settings 0.0000
+-1.4065 <s> show -0.0414
+-2.0086 <s> shutdown 0.0000
+-2.0086 <s> sing 0.0000
+-2.0086 <s> start 0.0000
+-1.8325 <s> stop -0.1383
+-2.0086 <s> tell 0.0000
+-1.5315 <s> turn 0.0000
+-2.3096 <s> unpair 0.0000
+-2.0086 <s> upload 0.0000
+-2.3096 <s> wakeup 0.0000
+-2.3096 <s> weather -0.2041
+-1.8325 <s> what 0.0000
+-0.3010 a photo -0.2688
+-0.3010 account </s> -0.3010
+-0.3010 active </s> -0.3010
+-0.3010 all bluetooth -0.2430
+-0.3010 are you 0.0000
+-0.3010 assistant </s> -0.3010
+-0.3010 automatically change -0.2430
+-0.6021 back </s> -0.3010
+-0.6021 back from 0.0000
+-0.3010 backward </s> -0.3010
+-0.3010 blue lighting 0.0000
+-1.3802 bluetooth active 0.0000
+-1.3802 bluetooth connected 0.0000
+-0.9031 bluetooth devices 0.0000
+-1.3802 bluetooth discovery 0.0000
+-1.0792 bluetooth off -0.1249
+-1.0792 bluetooth on -0.1091
+-1.3802 bluetooth pairing 0.0000
+-1.3802 bluetooth visible 0.0000
+-0.3010 browser </s> -0.3010
+-0.3010 cancel bluetooth -0.2825
+-0.9031 change google -0.1249
+-0.9031 change the -0.2825
+-0.6021 change weather -0.2041
+-0.3010 check is -0.1761
+-0.3010 city </s> -0.3010
+-0.3010 clear all 0.0000
+-0.3010 close window 0.0000
+-0.6021 cloud photo -0.0580
+-0.6021 cloud video -0.0902
+-0.3010 color of -0.0969
+-0.3010 coming days 0.0000
+-0.3010 connect google -0.1249
+-0.3010 connected </s> -0.3010
+-0.3010 date </s> -0.3010
+-0.7782 day </s> -0.3010
+-0.4771 day photo -0.0580
+-0.3010 days </s> -0.3010
+-0.3010 devices </s> -0.3010
+-0.3010 dim lights -0.2218
+-0.3010 discovery on -0.1091
+-0.3010 download cloud 0.0000
+-0.3010 e-mail </s> -0.3010
+-0.6021 forecast </s> -0.3010
+-0.6021 forecast in -0.1761
+-0.3010 forward </s> -0.3010
+-0.3010 from menu -0.2041
+-0.7782 go back -0.1761
+-0.4771 go menu -0.2041
+-1.0792 google </s> -0.3010
+-0.4771 google account 0.0000
+-1.0792 google assistant 0.0000
+-0.3010 gray </s> -0.3010
+-0.3010 green lighting 0.0000
+-0.3010 grey </s> -0.3010
+-0.3010 hide menu -0.2041
+-0.6021 in google -0.1249
+-0.6021 in the -0.2825
+-0.6021 is bluetooth -0.2632
+-0.9031 is it 0.0000
+-0.9031 is the -0.2632
+-0.3010 it </s> -0.3010
+-0.3010 last window 0.0000
+-0.3010 lighting </s> -0.3010
+-0.7782 lights </s> -0.3010
+-0.7782 lights off -0.1249
+-0.7782 lights on -0.1091
+-0.3010 location </s> -0.3010
+-0.3010 map of -0.2430
+-0.3010 me the -0.2218
+-0.6990 menu </s> -0.3010
+-1.3010 menu back -0.1761
+-1.0000 menu next -0.2218
+-1.0000 menu previous -0.2218
+-1.3010 menu select -0.1761
+-0.7782 music </s> -0.3010
+-0.4771 music player 0.0000
+-0.7782 next </s> -0.3010
+-0.7782 next song 0.0000
+-1.0792 next video -0.0902
+-1.0792 next window 0.0000
+-0.9031 of </s> -0.3010
+-0.4260 of the -0.2430
+-0.4771 off </s> -0.3010
+-1.0792 off gray 0.0000
+-1.0792 off lighting 0.0000
+-0.8451 ok play -0.1383
+-1.4472 ok previous -0.2218
+-1.4472 ok show -0.2788
+-1.4472 ok start -0.1761
+-1.1461 ok stop -0.2109
+-0.7482 ok switch 0.0000
+-0.7782 okay google -0.2632
+-0.7782 okay grey 0.0000
+-0.7782 okay stop -0.2430
+-0.4472 on </s> -0.3010
+-1.1461 on gray 0.0000
+-1.1461 on lighting 0.0000
+-0.6021 open browser 0.0000
+-0.6021 open window 0.0000
+-0.3010 out google -0.1249
+-0.3010 pair bluetooth -0.2430
+-0.3010 pairing </s> -0.3010
+-0.3680 photo </s> -0.3010
+-1.1461 photo of -0.0969
+-0.3010 pk play -0.2730
+-1.2041 play music -0.2218
+-1.2041 play next -0.2218
+-1.2041 play previous -0.2218
+-1.2041 play some 0.0000
+-0.9031 play song 0.0000
+-1.2041 play video -0.0902
+-1.2041 play youtube 0.0000
+-0.3010 player </s> -0.3010
+-0.9031 please show -0.2553
+-0.9031 please start -0.1761
+-0.6021 please stop -0.1761
+-0.7782 previous </s> -0.3010
+-0.7782 previous song 0.0000
+-0.7782 previous video -0.0902
+-0.3010 red lighting 0.0000
+-0.6021 select </s> -0.3010
+-0.6021 select from 0.0000
+-0.3010 settings </s> -0.3010
+-1.3010 show a 0.0000
+-1.0000 show day -0.1249
+-1.3010 show e-mail 0.0000
+-1.3010 show map 0.0000
+-1.3010 show me 0.0000
+-1.3010 show menu -0.2041
+-1.3010 show video -0.0902
+-1.0000 show weather -0.1461
+-0.6021 shutdown the -0.2825
+-0.6021 shutdown video -0.2478
+-0.6021 sing in -0.1761
+-0.6021 sing out 0.0000
+-0.3010 some music -0.2218
+-0.3010 song </s> -0.3010
+-0.6021 start music -0.1249
+-0.6021 start video -0.2478
+-0.9031 stop day -0.1249
+-1.2041 stop music -0.1249
+-1.2041 stop song 0.0000
+-0.9031 stop the -0.2632
+-0.9031 stop video -0.0902
+-1.0000 switch blue 0.0000
+-1.0000 switch green 0.0000
+-0.6990 switch lights -0.1249
+-1.0000 switch red 0.0000
+-0.3010 tasks of -0.0969
+-0.3010 tell me 0.0000
+-1.3802 the color 0.0000
+-1.3802 the coming 0.0000
+-1.3802 the date 0.0000
+-1.0792 the day -0.2218
+-1.3802 the lights -0.2218
+-1.3802 the music -0.1249
+-1.3802 the song 0.0000
+-1.3802 the tasks 0.0000
+-1.0792 the time -0.1249
+-1.3802 the video -0.0902
+-0.4771 time </s> -0.3010
+-0.7782 time is -0.2430
+-0.7782 turn bluetooth -0.2218
+-0.7782 turn off -0.2218
+-0.7782 turn on -0.2341
+-0.3010 unpair bluetooth -0.2430
+-0.3010 upload cloud 0.0000
+-0.4150 video </s> -0.3010
+-0.9379 video player 0.0000
+-0.3010 visible </s> -0.3010
+-0.3010 wakeup </s> -0.3010
+-1.0000 weather </s> -0.3010
+-1.0000 weather city 0.0000
+-0.6990 weather forecast 0.0000
+-1.0000 weather location 0.0000
+-0.7782 what are 0.0000
+-0.7782 what is -0.2430
+-0.7782 what time -0.2218
+-0.3010 window </s> -0.3010
+-0.3010 you </s> -0.3010
+-0.3010 youtube </s> -0.3010
+
+\3-grams:
+-0.3010 <s> automatically change
+-0.3010 <s> backward </s>
+-0.3010 <s> blue lighting
+-0.9031 <s> bluetooth discovery
+-0.9031 <s> bluetooth off
+-0.9031 <s> bluetooth on
+-0.9031 <s> bluetooth visible
+-0.3010 <s> cancel bluetooth
+-0.7782 <s> change google
+-0.4771 <s> change weather
+-0.3010 <s> check is
+-0.3010 <s> clear all
+-0.3010 <s> close window
+-0.3010 <s> connect google
+-0.3010 <s> dim lights
+-0.3010 <s> download cloud
+-0.3010 <s> forward </s>
+-0.7782 <s> go back
+-0.4771 <s> go menu
+-0.3010 <s> google assistant
+-0.3010 <s> green lighting
+-0.3010 <s> hide menu
+-0.3010 <s> last window
+-0.6021 <s> lights off
+-0.6021 <s> lights on
+-0.9031 <s> menu back
+-0.9031 <s> menu next
+-0.9031 <s> menu previous
+-0.9031 <s> menu select
+-0.7782 <s> next song
+-0.7782 <s> next video
+-0.7782 <s> next window
+-0.8451 <s> ok play
+-1.4472 <s> ok previous
+-1.4472 <s> ok show
+-1.4472 <s> ok start
+-1.1461 <s> ok stop
+-0.7482 <s> ok switch
+-0.7782 <s> okay google
+-0.7782 <s> okay grey
+-0.7782 <s> okay stop
+-0.6021 <s> open browser
+-0.6021 <s> open window
+-0.3010 <s> pair bluetooth
+-0.3010 <s> pk play
+-0.7782 <s> play song
+-0.7782 <s> play video
+-0.7782 <s> play youtube
+-0.9031 <s> please show
+-0.9031 <s> please start
+-0.6021 <s> please stop
+-0.6021 <s> previous song
+-0.6021 <s> previous video
+-0.3010 <s> red lighting
+-0.3010 <s> select from
+-0.3010 <s> settings </s>
+-1.2041 <s> show a
+-1.2041 <s> show day
+-1.2041 <s> show e-mail
+-1.2041 <s> show map
+-1.2041 <s> show me
+-1.2041 <s> show menu
+-0.9031 <s> show weather
+-0.6021 <s> shutdown the
+-0.6021 <s> shutdown video
+-0.6021 <s> sing in
+-0.6021 <s> sing out
+-0.6021 <s> start music
+-0.6021 <s> start video
+-0.7782 <s> stop day
+-0.7782 <s> stop song
+-0.7782 <s> stop video
+-0.3010 <s> tell me
+-0.7782 <s> turn bluetooth
+-0.7782 <s> turn off
+-0.7782 <s> turn on
+-0.3010 <s> unpair bluetooth
+-0.3010 <s> upload cloud
+-0.3010 <s> wakeup </s>
+-0.3010 <s> weather forecast
+-0.7782 <s> what are
+-0.7782 <s> what is
+-0.7782 <s> what time
+-0.3010 a photo of
+-0.3010 all bluetooth devices
+-0.3010 are you </s>
+-0.3010 automatically change the
+-0.3010 back from menu
+-0.3010 blue lighting </s>
+-0.3010 bluetooth active </s>
+-0.3010 bluetooth connected </s>
+-0.3010 bluetooth devices </s>
+-0.3010 bluetooth discovery on
+-0.3010 bluetooth off </s>
+-0.3010 bluetooth on </s>
+-0.3010 bluetooth pairing </s>
+-0.3010 bluetooth visible </s>
+-0.3010 cancel bluetooth pairing
+-0.3010 change google account
+-0.3010 change the color
+-0.6021 change weather city
+-0.6021 change weather location
+-0.3010 check is bluetooth
+-0.3010 clear all bluetooth
+-0.3010 close window </s>
+-0.3010 cloud photo </s>
+-0.3010 cloud video </s>
+-0.3010 color of the
+-0.3010 coming days </s>
+-0.3010 connect google account
+-0.3010 day photo </s>
+-0.3010 dim lights </s>
+-0.3010 discovery on </s>
+-0.6021 download cloud photo
+-0.6021 download cloud video
+-0.3010 forecast in the
+-0.3010 from menu </s>
+-0.3010 go back from
+-0.6021 go menu next
+-0.6021 go menu previous
+-0.3010 google account </s>
+-0.3010 google assistant </s>
+-0.3010 green lighting </s>
+-0.3010 hide menu </s>
+-0.3010 in google account
+-0.3010 in the coming
+-0.6021 is bluetooth active
+-0.6021 is bluetooth connected
+-0.3010 is it </s>
+-0.3010 is the time
+-0.3010 last window </s>
+-0.3010 lights off </s>
+-0.3010 lights on </s>
+-0.3010 map of </s>
+-0.7782 me the date
+-0.7782 me the tasks
+-0.7782 me the time
+-0.3010 menu back </s>
+-0.3010 menu next </s>
+-0.3010 menu previous </s>
+-0.3010 menu select </s>
+-0.3010 music player </s>
+-0.3010 next song </s>
+-0.3010 next video </s>
+-0.3010 next window </s>
+-0.4771 of the day
+-0.7782 of the lights
+-0.3010 off gray </s>
+-0.3010 off lighting </s>
+-0.9031 ok play music
+-0.9031 ok play previous
+-0.9031 ok play some
+-0.9031 ok play song
+-0.3010 ok previous video
+-0.3010 ok show video
+-0.3010 ok start music
+-0.6021 ok stop music
+-0.6021 ok stop the
+-1.0000 ok switch blue
+-1.0000 ok switch green
+-0.6990 ok switch lights
+-1.0000 ok switch red
+-0.3010 okay google </s>
+-0.3010 okay grey </s>
+-0.3010 okay stop the
+-0.3010 on gray </s>
+-0.3010 on lighting </s>
+-0.3010 open browser </s>
+-0.3010 open window </s>
+-0.3010 out google account
+-0.3010 pair bluetooth devices
+-0.3010 photo of the
+-0.3010 pk play next
+-0.3010 play music </s>
+-0.3010 play next song
+-0.3010 play previous song
+-0.3010 play some music
+-0.3010 play song </s>
+-0.3010 play video </s>
+-0.3010 play youtube </s>
+-0.3010 please show day
+-0.3010 please start video
+-0.6021 please stop day
+-0.6021 please stop video
+-0.3010 previous song </s>
+-0.3010 previous video </s>
+-0.3010 red lighting </s>
+-0.3010 select from menu
+-0.3010 show a photo
+-0.3010 show day photo
+-0.3010 show e-mail </s>
+-0.3010 show map of
+-0.3010 show me the
+-0.3010 show menu </s>
+-0.3010 show video </s>
+-0.6021 show weather </s>
+-0.6021 show weather forecast
+-0.3010 shutdown the music
+-0.3010 shutdown video player
+-0.3010 sing in google
+-0.3010 sing out google
+-0.3010 some music </s>
+-0.3010 start music player
+-0.3010 start video player
+-0.3010 stop day photo
+-0.3010 stop music player
+-0.3010 stop song </s>
+-0.6021 stop the song
+-0.6021 stop the video
+-0.3010 stop video </s>
+-0.3010 switch blue lighting
+-0.3010 switch green lighting
+-0.6021 switch lights off
+-0.6021 switch lights on
+-0.3010 switch red lighting
+-0.3010 tasks of the
+-0.3010 tell me the
+-0.3010 the color of
+-0.3010 the coming days
+-0.3010 the date </s>
+-0.3010 the day </s>
+-0.3010 the lights </s>
+-0.3010 the music player
+-0.3010 the song </s>
+-0.3010 the tasks of
+-0.3010 the time </s>
+-0.3010 the video </s>
+-0.3010 time is it
+-0.6021 turn bluetooth off
+-0.6021 turn bluetooth on
+-0.6021 turn off gray
+-0.6021 turn off lighting
+-0.6021 turn on gray
+-0.6021 turn on lighting
+-0.3010 unpair bluetooth devices
+-0.6021 upload cloud photo
+-0.6021 upload cloud video
+-0.3010 video player </s>
+-0.3010 weather city </s>
+-0.6021 weather forecast </s>
+-0.6021 weather forecast in
+-0.3010 weather location </s>
+-0.3010 what are you
+-0.3010 what is the
+-0.3010 what time is
+
+\end\

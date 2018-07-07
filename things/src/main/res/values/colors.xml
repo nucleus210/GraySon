@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#e3594900</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorText">#cecece</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparentHalf">#7a000000</color>
+    <color name="whiteTransparent">#37ffffff</color>
+    <color name="whiteBackTransparent">#0effffff</color>
+    <color name="OneFourTransparent">#b7000000</color>
+    <color name="clock_back_text">#494949</color>
+    <color name="colorTextSec">#4e4e4e</color>
+    <color name="btImageButtons">#00000000</color>
+</resources>

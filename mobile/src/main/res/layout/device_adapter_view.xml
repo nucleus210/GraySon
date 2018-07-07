@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvDeviceName_mob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:padding="@dimen/text_padding"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/divider_vertical_margin"
+        android:layout_marginBottom="@dimen/divider_vertical_margin"
+        android:background="@color/colorPrimaryMediumDark" />
+
+    <TextView
+        android:id="@+id/tvDeviceAddress_mob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/text_padding"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/divider_vertical_margin"
+        android:layout_marginBottom="@dimen/divider_vertical_margin"
+        android:background="@color/colorPrimaryMediumDark" />
+
+    <TextView
+        android:id="@+id/signal_rssi_text_mob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:padding="@dimen/text_padding"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="12sp" />
+</LinearLayout>

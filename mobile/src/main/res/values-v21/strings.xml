@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GraysonMob</string>
+    <string name="action_settings">settings</string>
+    <string name="image">image</string>
+    <string name="upload">upload</string>
+    <string name="pick">Image pick</string>
+    <string name="signal">RFFI signal</string>
+    <string name="search">search</string>
+    <string name="discoverable">visible</string>
+    <string name="connect">connect</string>
+    <string name="Bt_on_off">Bt Off</string>
+    <string name="device_signal">Device signal</string>
+    <string name="device_address">Device Address</string>
+    <string name="device_name">Device name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_send">Send</string>
+    <string name="image_pick">pick</string>
+    <string name="image_container">Image Container</string>
+</resources>

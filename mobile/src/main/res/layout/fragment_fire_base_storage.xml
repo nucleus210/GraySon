@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".FireBaseStorageFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:text="@string/firebase_storage" />
+
+            <EditText
+                android:id="@+id/text_message_post"
+                style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/title_text"
+                android:layout_margin="@dimen/main_margin"
+                android:hint="@string/post_message_text"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/main_padding"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/btn_post_message"
+                style="@style/Base.Widget.AppCompat.ActionButton"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_message_post"
+                android:layout_alignEnd="@id/text_message_post"
+                android:background="@color/Buttons"
+                android:text="@string/post_message"
+                android:textColor="@color/colorText"
+                tools:ignore="ButtonStyle" />
+
+            <RelativeLayout
+                android:id="@+id/img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btn_post_message"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/main_margin">
+
+                <ImageView
+                    android:id="@+id/img_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/selected_image" />
+
+                <TextView
+                    android:id="@+id/tv_file_name"
+                    style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/main_margin"
+                    android:text="@string/file_name"
+                    android:textAlignment="gravity" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_upload_file"
+                        style="@style/Base.Widget.AppCompat.ActionButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/main_margin"
+                        android:layout_marginEnd="@dimen/main_margin"
+                        android:layout_weight="0.4"
+                        android:background="@color/Buttons"
+                        android:text="@string/upload_api"
+                        android:textColor="@color/colorText"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/btn_choose_file"
+                        style="@style/Base.Widget.AppCompat.ActionButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@color/Buttons"
+                        android:text="@string/pick_image"
+                        android:textColor="@color/colorText"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

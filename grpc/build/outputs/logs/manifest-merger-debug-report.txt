@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:11-44
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+		ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+	android:versionCode
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+		ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:1:1-6:12
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+application
+ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml:3:5-4:19
+uses-sdk
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+		ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+		ADDED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml
+		INJECTED from /home/nucle/Android-Work-Space/GraySon/grpc/src/main/AndroidManifest.xml

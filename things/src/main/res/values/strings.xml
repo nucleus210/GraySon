@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">GraySon</string>
+
+    <!-- WeatherModel API -->
+    <string name="city">Varna</string>
+    <string name="_108_psa">108 Psa</string>
+    <string name="temperature">30 C</string>
+    <string name="update_data">update</string>
+    <string name="change_city">Change city</string>
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+    <string name="weather_icon">Weather icon</string>
+    <string name="weather_dialog_menu_bt">Accept</string>
+    <string name="weather_main_ico">weather_main_ico</string>
+    <string name="weather_dialog_menu_title">Change city</string>
+    <string name="place_not_found">Sorry, no weatherModel data found.</string>
+    <string name="open_weather_maps_app_id">65b938422c71f0d088afb635b24da2be</string>
+
+    <!-- Bluetooth -->
+    <string name="send">SEND</string>
+    <string name="no_data">No data</string>
+    <string name="label_data">Data:</string>
+    <string name="label_state">State:</string>
+    <string name="connected">Connected</string>
+    <string name="image_send">Image Send</string>
+    <string name="image_pick">Image Pick</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="enter_text_here">Enter Text Here</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <!-- Bluetooth menu items-->
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="on_off_button">Power</string>
+    <string name="discoverable">Action</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="bt_connected_state">Connected</string>
+    <string name="bt_found_devices">Found Devices</string>
+    <string name="bt_connecting_state">Connecting</string>
+    <string name="bt_toast_connect_to">Connected to</string>
+    <string name="bt_not_connected_state">Disconnected</string>
+    <string name="remote_control_logger">Remote Control</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Music player -->
+    <string name="time">0:00</string>
+    <string name="song_title">Song title</string>
+    <string name="song_artist">Song artist</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="todo">TODO</string>
+    <string name="google_conversation_start">Okay Google</string>
+    <string name="kws_caption">To start demonstration say \"ok gray\".</string>
+    <string name="bluetooth_on_off">Bluetooth on/off</string>
+    <string name="bluetooth_discovery">Bluetooth discovery</string>
+    <string name="bluetooth_search">Bluetooth search</string>
+    <string name="power">power</string>
+
+    <!-- API Account -->
+     <!-- TODO Create login screen -->
+    <string name="TYPE_EMAIL_HERE">email_address</string>
+    <string name="ACCOUNT_PASSWORD">account password</string>
+</resources>

@@ -1,0 +1,46 @@
+package com.example.root.grayson;
+
+
+public enum ActionMenu {
+    INITIALIZING ("INITIALIZING"),
+    LISTENING_TO_KEYPHRASE ("LISTENING_TO_KEYPHRASE"),
+    CONFIRMING_KEYPHRASE ("CONFIRMING_KEYPHRASE"),
+    LISTENING_TO_ACTION ("LISTENING_TO_ACTION"),
+    CONFIRMING_ACTION ("CONFIRMING_ACTION"),
+
+    LISTENING_TO_ASSISTANT ("LISTENING_TO_ASSISTANT"),
+
+    START_MUSIC_PLAYER ("START_MUSIC_PLAYER"),
+                     PREVIOUS_SONG ("PREVIOUS_SONG"),
+                     NEXT_SONG ("NEXT_SONG"),
+    STOP_MUSIC_PLAYER ("STOP_MUSIC_PLAYER"),
+
+    FILE_OPERATION ("FILE_OPERATION"),
+
+    CONFIRM_ASSISTANT ("CONFIRM_ASSISTANT"),
+    SHOW_DAY_PHOTO ("SHOW_DAY_PHOTO"),
+    FIRE_BASE_STORAGE ("FIRE_BASE_STORAGE"),
+    CLOUD_STORAGE ("CLOUD_STORAGE"),
+    SHOW_WEATHER ("SHOW_WEATHER"),
+    UPLOAD_IMAGE ("UPLOAD_IMAGE"),
+    DRIVE_STORAGE ("DRIVE_STORAGE"),
+
+    LIGHTS_ON ("LIGHTS_ON"),
+           GREEN_LIGHTING ("GREEN_LIGHTING"),
+           BLUE_LIGHTING ("BLUE_LIGHTING"),
+           RED_LIGHTING ("RED_LIGHTING"),
+    LIGHTS_OFF ("LIGHTS_OFF"),
+
+    SHOW_TIME ("SHOW_TIME"),
+    TURN_OFF ("TURN_OFF"),
+    TURN_ON ("TURN_ON");
+
+    private final String action;
+    ActionMenu(String action) {
+        this.action = action;
+    }
+
+    public String getAction() { return action; }
+}
+
+

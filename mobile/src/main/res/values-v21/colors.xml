@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#181818</color>
+    <color name="colorPrimaryMediumDark">#a6544b00</color>
+    <color name="colorPrimaryDark">#282828</color>
+    <color name="colorAccent">#30ce73</color>
+    <color name="colorText">#dcdcdc</color>
+    <color name="Buttons">#0e0e0e</color>
+    <color name="btImageButtons">#00000000</color>
+    <color name="gridItems">#e3232323</color>
+    <color name="transparentButton">#62232323</color>
+    <color name="transparentLayout">#d8232323</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/power"
+        android:checkable="false"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_power_settings_new_white_24dp"
+        android:title="@string/power"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/bt_on_off"
+        android:checkable="false"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_bluetooth_disabled_white_24dp"
+        android:title="@string/bluetooth_on_off"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bt_discovery"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_settings_input_antenna_black_24dp"
+        android:title="@string/bluetooth_discovery"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bt_search"
+        android:orderInCategory="4"
+        android:icon="@drawable/ic_bluetooth_searching_black_24dp"
+        android:title="@string/bluetooth_search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/change_city"
+        android:orderInCategory="5"
+        android:icon="@drawable/ic_bluetooth_searching_black_24dp"
+        android:title="@string/change_city"
+        app:showAsAction="always" />
+</menu>

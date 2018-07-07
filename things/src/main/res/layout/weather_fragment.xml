@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_layout_shape"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.root.grayson.weatherApi.WeatherFragment">
+
+    <TextView
+        android:id="@+id/city_field"
+        style="@style/customTextMedium"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/left_margin_data"
+        android:layout_marginTop="@dimen/top_margin_media_data"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:elevation="6dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/city"
+        android:textAlignment="gravity" />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_below="@id/city_field"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/left_margin_data"
+        android:contentDescription="@string/weather_main_ico"
+        android:elevation="4dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/current_temperature_field"
+        style="@style/customTextSmall"
+        android:layout_above="@id/pressure_field"
+        android:layout_alignTop="@id/weather_icon"
+        android:layout_marginStart="@dimen/right_margin_media_data"
+        android:layout_toEndOf="@id/weather_icon"
+        android:elevation="3dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/temperature"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:id="@+id/pressure_field"
+        style="@style/customTextSmall"
+        android:layout_above="@id/weather_list"
+        android:layout_marginStart="@dimen/right_margin_media_data"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_toEndOf="@id/weather_icon"
+        android:elevation="2dp"
+        android:text="@string/_108_psa"
+        android:textAlignment="gravity" />
+
+    <ListView
+        android:id="@+id/weather_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:dividerHeight="0dp"
+        android:gravity="start|center_vertical"
+        android:textAlignment="gravity" />
+
+</RelativeLayout>

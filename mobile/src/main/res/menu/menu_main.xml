@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.renovo.graysonmob.MainActivity">
+
+    <!-- Upload image using byte option -->
+    <item
+        android:id="@+id/byte_upload"
+        android:title="@string/api_upload_byte_option"
+        app:showAsAction="never" />
+
+    <!-- Upload image using stream option -->
+    <item
+        android:id="@+id/stream_upload"
+        android:title="@string/api_upload_stream_option"
+        app:showAsAction="never" />
+
+    <!-- Upload image using file option -->
+    <item
+        android:id="@+id/file_upload"
+        android:title="@string/api_upload_file_option"
+        app:showAsAction="never" />
+</menu>

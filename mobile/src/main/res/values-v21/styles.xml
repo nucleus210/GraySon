@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <item name="android:itemBackground">#464646</item>
+        <item name="android:itemTextAppearance">@style/Base.TextAppearance.AppCompat.Small.Inverse</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Custom text small style -->
+    <style name="Theme.Transparent" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/transparentLayout</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Custom text style -->
+    <style name="bluetoothButtons" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@color/btImageButtons</item>
+    </style>
+
+    <style name="customTextSmall" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+
+    <!-- Custom text style -->
+    <style name="customTextMedium" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+
+    <!-- Custom Large text style -->
+    <style name="customTextLarge" parent="android:TextAppearance.DeviceDefault.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+
+    <style name="CustomTabWidgetText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

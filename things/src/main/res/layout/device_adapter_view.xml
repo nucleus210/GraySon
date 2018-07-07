@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tvDeviceName"
+        style="@style/BluetoothList"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:id="@+id/tvDeviceAddress"
+        style="@style/BluetoothList"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/signal_rssi_text"
+        style="@style/BluetoothList"
+        android:layout_weight="0.5" />
+
+</LinearLayout>
