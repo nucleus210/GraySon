@@ -166,13 +166,13 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
     @Override
     public void cloudStorageAccountListener(Bitmap bitmap) {
-        mTextToSpeechManager.say("Downloading files from FireBase complete");
+        mTextToSpeechManager.say(getString(R.string.api_download_complete));
         mImageContainer.setImageBitmap(bitmap);
     }
 
     @Override
     public void cloudStorageErrorListener(String error) {
-        mTextToSpeechManager.say("Error downloading files from FireBase");
+        mTextToSpeechManager.say(getString(R.string.api_download_error));
         mPocketSphinxLogAdapter.add(error);
     }
 
@@ -739,7 +739,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
             boolean mBool = requestPermanentAudioFocus(mContext);
             if (mBool) {
                 state = State.CONFIRM_ASSISTANT;
-                mTextToSpeechManager.say("Starting Google Assistant");
+                mTextToSpeechManager.say(getString(R.string.action_start_assistant));
             }
         }
     }
@@ -757,7 +757,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
     @Override
     public void speechTimeOut() {
         state = State.TIMEOUT;
-        mTextToSpeechManager.say("Timeout!");
+        mTextToSpeechManager.say(getString(R.string.recognizer_time_out));
         releaseAudioFocus(mContext);
     }
 
@@ -1042,8 +1042,6 @@ public class GraySonMainActivity extends AppCompatActivity implements
             GoogleCloud.updateUIGoogle(null);
         }
     }
-
-
 //------------------------------------------------------------------------------------------------//
 
     /**
@@ -1165,8 +1163,8 @@ public class GraySonMainActivity extends AppCompatActivity implements
                 break;
 
             case BT_DOWNLOAD:
-                mTextToSpeechManager.say("Download complete");
-
+                Log.d(TAG, "Bluetooth download complete");
+                mTextToSpeechManager.say(getString(R.string.action_download_complete));
                 break;
 
             case START_MUSIC_PLAYER:
@@ -1190,14 +1188,14 @@ public class GraySonMainActivity extends AppCompatActivity implements
                                 .commit();
                         Log.d(TAG, "Start music player");
                         // System output
-                        mTextToSpeechManager.say("I'm starting music player");
+                        mTextToSpeechManager.say(getString(R.string.action_start_music_player));
                     }
                 }
                 break;
 
             case PLAY_SONG:
                 // System output
-                mTextToSpeechManager.say("I'm playing music");
+                mTextToSpeechManager.say(getString(R.string.action_playing_music));
                 // Stop music player
                 try {
                     MusicPlayerFragment musicPlayerFragment =
@@ -1210,7 +1208,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
                 break;
 
             case STOP_SONG:
-                mTextToSpeechManager.say("I'm stop music");
+                mTextToSpeechManager.say(getString(R.string.action_stop_music));
                 // Stop music player
                 try {
                     MusicPlayerFragment musicPlayerFragment =
@@ -1225,7 +1223,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
             case NEXT_SONG:
                 Log.d(TAG, "Next Song");
                 // System output
-                mTextToSpeechManager.say("Playing next song");
+                mTextToSpeechManager.say(getString(R.string.action_next_song));
                 // Play next song
                 try {
                     MusicPlayerFragment musicPlayerFragment =
@@ -1240,7 +1238,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
             case PREVIOUS_SONG:
                 Log.d(TAG, "Previous song");
                 // System output
-                mTextToSpeechManager.say("Playing previous song");
+                mTextToSpeechManager.say(getString(R.string.action_previous_song));
                 // Play previous song
                 try {
                     MusicPlayerFragment musicPlayerFragment =
@@ -1255,7 +1253,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
             case STOP_MUSIC_PLAYER:
                 Log.d(TAG, "Stop music player");
                 // System output
-                mTextToSpeechManager.say("Stop music player");
+                mTextToSpeechManager.say(getString(R.string.action_stop_music_player));
                 // Remove player Fragment
                 Fragment player = getSupportFragmentManager().findFragmentByTag("MUSIC_FRAGMENT");
                 if (player != null)
@@ -1266,7 +1264,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case START_VIDEO_PLAYER:
                 // System output
-                mTextToSpeechManager.say("I'm playing video");
+                mTextToSpeechManager.say(getString(R.string.action_play_video));
                 // play video
                 try {
                     VideoPlayerActivity videoPlayerActivity =
@@ -1280,7 +1278,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case STOP_VIDEO:
                 // System output
-                mTextToSpeechManager.say("I'm stop video");
+                mTextToSpeechManager.say(getString(R.string.action_stop_video));
                 // play video
                 try {
                     VideoPlayerActivity videoPlayerActivity =
@@ -1294,7 +1292,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case PREVIOUS_VIDEO:
                 // System output
-                mTextToSpeechManager.say("I'm playing previous video");
+                mTextToSpeechManager.say(getString(R.string.action_previous_video));
                 // play video
                 try {
                     VideoPlayerActivity videoPlayerActivity =
@@ -1308,7 +1306,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case NEXT_VIDEO:
                 // System output
-                mTextToSpeechManager.say("I'm playing next video");
+                mTextToSpeechManager.say(getString(R.string.action_next_video));
                 // play video
                 try {
                     VideoPlayerActivity videoPlayerActivity =
@@ -1322,48 +1320,48 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case SHOW_MENU:
                 Log.d(TAG, "Showing menu");
-                mTextToSpeechManager.say("I'm showing menu");
+                mTextToSpeechManager.say(getString(R.string.action_show_menu));
                 invalidateOptionsMenu();
                 Objects.requireNonNull(getSupportActionBar()).show();
                 //TODO
                 break;
             case MENU_SELECT:
                 Log.d(TAG, "Selecting from menu");
-                mTextToSpeechManager.say("Selecting");
+                mTextToSpeechManager.say(getString(R.string.action_select_menu));
                 //TODO
                 break;
             case MENU_NEXT:
                 Log.d(TAG, "Menu next");
-                mTextToSpeechManager.say("menu next");
+                mTextToSpeechManager.say(getString(R.string.action_menu_next));
                 //TODO
                 break;
 
             case MENU_BACK:
                 Log.d(TAG, "Menu back");
-                mTextToSpeechManager.say("menu back");
+                mTextToSpeechManager.say(getString(R.string.action_menu_back));
                 //TODO
                 break;
             case MENU_PREVIOUS:
                 Log.d(TAG, "Menu previous");
-                mTextToSpeechManager.say("menu previous");
+                mTextToSpeechManager.say(getString(R.string.action_menu_previous));
                 //TODO
                 break;
             case HIDE_MENU:
                 Log.d(TAG, "Hide Menu");
-                mTextToSpeechManager.say("I'm hiding menu");
+                mTextToSpeechManager.say(getString(R.string.action_hide_menu));
                 invalidateOptionsMenu();
                 Objects.requireNonNull(getSupportActionBar()).hide();
                 //TODO
                 break;
             case PLAY_YOUTUBE:
                 Log.d(TAG, "Play Youtube");
-                mTextToSpeechManager.say("I'm playing Youtube");
+                mTextToSpeechManager.say(getString(R.string.action_play_youtube));
                 //TODO
                 break;
 
             case BLUETOOTH_ON:
                 // System output
-                mTextToSpeechManager.say("Turn Bluetooth on");
+                mTextToSpeechManager.say(getString(R.string.action_bluetooth_on));
                 // play video
                 if (!isBluetoothOn) {
                     try {
@@ -1380,7 +1378,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case BLUETOOTH_OFF:
                 // System output
-                mTextToSpeechManager.say("Turn Bluetooth off");
+                mTextToSpeechManager.say(getString(R.string.action_bluetooth_off));
                 // play video
                 if (isBluetoothOn) {
                     try {
@@ -1397,7 +1395,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case BLUETOOTH_DISCOVERY:
                 // System output
-                mTextToSpeechManager.say("Turn Bluetooth discovery for 30 seconds");
+                mTextToSpeechManager.say(getString(R.string.action_bluetooth_discovery));
                 // Bluetooth discovery
                 try {
                     BluetoothActivityFragment bluetoothActivityFragment =
@@ -1411,7 +1409,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case BLUETOOTH_SCAN:
                 // System output
-                mTextToSpeechManager.say("Scanning for unpaired devices");
+                mTextToSpeechManager.say(getString(R.string.action_bluetooth_search));
                 // Bluetooth discovery
                 try {
                     BluetoothActivityFragment bluetoothActivityFragment =
@@ -1426,7 +1424,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
             case FIRE_BASE_STORAGE:
                 Log.d(TAG, "Fire base storage");
                 // System output
-                mTextToSpeechManager.say("I am hunger for files. I'm will eat em all");
+                mTextToSpeechManager.say(getString(R.string.action_api_download));
                 //downloadImageFromFireBase();
                 if (showDayPhotoThread != null && showDayPhotoThread.isAlive()) {
                     try {
@@ -1449,14 +1447,14 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case CONFIRM_ASSISTANT:
                 Log.d(TAG, "Google Assistant");
-                mTextToSpeechManager.say("Starting Google Assistant");
+                mTextToSpeechManager.say(getString(R.string.action_start_assistant));
                 state = State.CONFIRM_ASSISTANT;
                 break;
 
             case SHOW_DAY_PHOTO:
                 Log.d(TAG, "Showing day photo");
                 // System output
-                mTextToSpeechManager.say("Showing day photo");
+                mTextToSpeechManager.say(getString(R.string.action_show_day_photo));
 
                 if (showDayPhotoThread != null && showDayPhotoThread.isAlive()) {
                     try {
@@ -1487,7 +1485,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
             case STOP_DAY_PHOTO:
                 Log.d(TAG, "Remove day photo");
                 // System output
-                mTextToSpeechManager.say("Stop day photo");
+                mTextToSpeechManager.say(getString(R.string.action_stop_day_photo));
                 if (showDayPhotoThread != null && showDayPhotoThread.isAlive()) {
                     // Remove day photo
                     try {
@@ -1504,7 +1502,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case CLOUD_STORAGE:
                 Log.d(TAG, "Cloud Storage");
-                mTextToSpeechManager.say("Connecting Cloud Storage");
+                mTextToSpeechManager.say(getString(R.string.action_connect_cloud));
                 String email = getString(R.string.TYPE_EMAIL_HERE);
                 String pass = getString(R.string.ACCOUNT_PASSWORD);
                 mGoogleCloud.singInFireBaseStorage(email, pass);
@@ -1512,72 +1510,73 @@ public class GraySonMainActivity extends AppCompatActivity implements
 
             case SING_IN_GOOGLE:
                 Log.d(TAG, "Sing In Google account");
-                mTextToSpeechManager.say("Sing In Google account");
+                mTextToSpeechManager.say(getString(R.string.action_sing_google_account));
                 signIn(); //start firebase connection
                 mPocketSphinxLogAdapter.add(mGoogleCloud.showGoogleAccount());
                 break;
 
             case SING_OUT_GOOGLE:
                 Log.d(TAG, "Sing Out Google account");
-                mTextToSpeechManager.say("Sing Out Google account");
+                mTextToSpeechManager.say(getString(R.string.action_sing_out_google_account));
                 signOut();
                 break;
 
             case SHOW_WEATHER:
                 Log.d(TAG, "Start WeatherModel");
-                mTextToSpeechManager.say("Ok i am starting weather forecast");
+                mTextToSpeechManager.say(getString(R.string.action_show_weather));
                 //TODO
                 break;
 
             case CHANGE_WEATHER_CITY:
-                mTextToSpeechManager.say("I'm changing weather city");
+                Log.d(TAG, "Change weather city");
+                mTextToSpeechManager.say(getString(R.string.action_change_weather_city));
                 hideSystemUI();
                 showInputDialog();
                 break;
 
             case UPLOAD_IMAGE:
                 Log.d(TAG, "Uploading files...");
-                mTextToSpeechManager.say("Starting file uploading.");
+                mTextToSpeechManager.say(getString(R.string.action_file_uploading));
                 break;
 
             case LIGHTS_ON:
                 Log.d(TAG, "Lights on");
-                mTextToSpeechManager.say("Turning light on");
+                mTextToSpeechManager.say(getString(R.string.action_lights_on));
                 break;
 
             case LIGHTS_OFF:
                 Log.d(TAG, "Lights off");
-                mTextToSpeechManager.say("Turning light off");
+                mTextToSpeechManager.say(getString(R.string.action_lights_off));
                 break;
 
             case RED_LIGHTING:
                 Log.d(TAG, "Turning light red");
-                mTextToSpeechManager.say("Turning light red");
+                mTextToSpeechManager.say(getString(R.string.action_red_lights));
                 break;
 
             case GREEN_LIGHTING:
                 Log.d(TAG, "Turning light green");
-                mTextToSpeechManager.say("Turning light green");
+                mTextToSpeechManager.say(getString(R.string.action_green_lights));
                 break;
 
             case BLUE_LIGHTING:
                 Log.d(TAG, "Turning light blue");
-                mTextToSpeechManager.say("Turning light blue");
+                mTextToSpeechManager.say(getString(R.string.action_blue_lights));
                 break;
 
             case AUTO_LIGHTS:
-                Log.d(TAG, "Automatic change lights colors");
-                mTextToSpeechManager.say("Automatic change lights colors");
+                Log.d(TAG,"Automatic change lights colors");
+                mTextToSpeechManager.say(getString(R.string.action_lights_auto));
                 break;
 
             case SHOW_TIME:
                 Log.d(TAG, "Ok, you need a time");
-                mTextToSpeechManager.say("Ok i am starting weather forecast");
+                mTextToSpeechManager.say(getString(R.string.action_weather_forecast));
                 break;
 
             case TURN_OFF:
                 Log.d(TAG, "Turn Off");
-                mTextToSpeechManager.say("Again, Ok I'm turning off");
+                mTextToSpeechManager.say(getString(R.string.action_turn_off));
                 // Start listening wake up phrase
                 state = State.LISTENING_TO_KEYPHRASE;
                 mPocketSphinxRecognizer.startListeningToActivationPhrase();
@@ -1596,8 +1595,8 @@ public class GraySonMainActivity extends AppCompatActivity implements
                 break;
 
             case TURN_ON:
-                Log.d(TAG, "Turn On");
-                mTextToSpeechManager.say("Yaaaaaaaaahoooooo");
+                Log.d(TAG,"Turn On");
+                mTextToSpeechManager.say(getString(R.string.turn_on));
                 turnOnScreen();
                 break;
         }
@@ -1870,7 +1869,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
                 .setOnAudioFocusChangeListener(mAudioFocusListener, mHandler)
                 .build();
         mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-        mAudioManager.abandonAudioFocusRequest(mAudioFocusRequest);
+        Objects.requireNonNull(mAudioManager).abandonAudioFocusRequest(mAudioFocusRequest);
     }
 //------------------------------------------------------------------------------------------------//
 
@@ -1947,7 +1946,7 @@ public class GraySonMainActivity extends AppCompatActivity implements
 //------------------------------------------------------------------------------------------------//
     private void downloadCloudImage() {
         // System output
-        mTextToSpeechManager.say("I am hunger for files. I'm will eat em all");
+        mTextToSpeechManager.say(getString(R.string.action_cloud_photo_download));
         //downloadImageFromFireBase();
         if (showDayPhotoThread != null && showDayPhotoThread.isAlive()) {
             try {

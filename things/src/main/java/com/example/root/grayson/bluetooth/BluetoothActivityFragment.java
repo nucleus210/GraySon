@@ -347,7 +347,7 @@ public class BluetoothActivityFragment extends Fragment implements
             int newState = A2dpSinkHelper.getCurrentAdapterState(intent);
             Log.d(TAG, "Bluetooth Adapter changing state from " + oldState + " to " + newState);
             if (newState == BluetoothAdapter.STATE_ON) {
-                mTextToSpeechManager.say("Bluetooth Adapter ready ");
+                mTextToSpeechManager.say(getString(R.string.tts_bt_ready));
                 Log.i(TAG, "Bluetooth Adapter is ready");
                 initA2DPSink();
             }
@@ -375,10 +375,10 @@ public class BluetoothActivityFragment extends Fragment implements
                 if (device != null) {
                     String deviceName = Objects.toString(device.getName(), "a device");
                     if (newState == BluetoothProfile.STATE_CONNECTED) {
-                        mTextToSpeechManager.say("Connected to " + deviceName);
+                        mTextToSpeechManager.say(getString(R.string.tts_bt_connect_to) + deviceName);
 
                     } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
-                        mTextToSpeechManager.say("Disconnected from " + deviceName);
+                        mTextToSpeechManager.say(getString(R.string.tts_bt_disconnect) + deviceName);
                     }
                 }
             }
@@ -404,10 +404,10 @@ public class BluetoothActivityFragment extends Fragment implements
                         " to " + newState + " device " + device);
                 if (device != null) {
                     if (newState == A2dpSinkHelper.STATE_PLAYING) {
-                        mTextToSpeechManager.say("Playing audio ");
+                        mTextToSpeechManager.say(getString(R.string.tts_bt_playing_audio));
                         Log.i(TAG, "Playing audio from device " + device.getAddress());
                     } else if (newState == A2dpSinkHelper.STATE_NOT_PLAYING) {
-                        mTextToSpeechManager.say("Stop playing audio ");
+                        mTextToSpeechManager.say(getString(R.string.tts_bt_stop_playing_audio));
                         Log.i(TAG, "Stopped playing audio from " + device.getAddress());
                     }
                 }
@@ -572,7 +572,7 @@ public class BluetoothActivityFragment extends Fragment implements
                 Log.d(TAG, "Trying to pair with " + deviceName);
                 mBTDevices.get(position).createBond();
                 mBTDevice = mBTDevices.get(position);
-                Toast.makeText(getActivity(), "Trying to pair with.. "
+                Toast.makeText(getActivity(), getString(R.string.toast_bt_pairing)
                         + deviceName + deviceAddress, Toast.LENGTH_SHORT).show();
             }
         });
@@ -737,7 +737,7 @@ public class BluetoothActivityFragment extends Fragment implements
             } catch (NullPointerException w) {
                 Log.d(TAG, "enableDisableBT NuLL");
             }
-            Toast.makeText(getActivity(), "enable Bluetooth...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), R.string.toast_bt_enable, Toast.LENGTH_SHORT).show();
         } else {
             IntentFilter BTIntent = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
             try {
@@ -773,7 +773,7 @@ public class BluetoothActivityFragment extends Fragment implements
             } catch (NullPointerException w) {
                 Log.d(TAG, "enableDisableBT NuLL");
             }
-            Toast.makeText(getActivity(), "enable Bluetooth...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), R.string.toast_bt_enable, Toast.LENGTH_SHORT).show();
         }
 
         if (mBluetoothAdapter.isEnabled()) {
@@ -788,7 +788,7 @@ public class BluetoothActivityFragment extends Fragment implements
             } catch (NullPointerException w) {
                 Log.d(TAG, "enableDisableBT NuLL");
             }
-            Toast.makeText(getActivity(), "disable Bluetooth...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), R.string.toast_bt_disabled, Toast.LENGTH_SHORT).show();
         }
     }
 //------------------------------------------------------------------------------------------------//
@@ -808,7 +808,7 @@ public class BluetoothActivityFragment extends Fragment implements
         Objects.requireNonNull(getActivity()).registerReceiver(mBtModeStateReceiver, intentFilter);
         getActivity().registerReceiver(mRssiReceiver, intentFilter);
         Toast.makeText(Objects.requireNonNull(getActivity()).getBaseContext(),
-                "Discover enabled for 300 sec.", Toast.LENGTH_SHORT).show();
+                R.string.toast_bt_discovery, Toast.LENGTH_SHORT).show();
     }
 //------------------------------------------------------------------------------------------------//
 
@@ -1004,7 +1004,7 @@ public class BluetoothActivityFragment extends Fragment implements
         switch (requestCode) {
             case REQUEST_ENABLE_BLUETOOTH:
                 Log.d(TAG, "Enable discoverable returned with result " + resultCode);
-                mTextToSpeechManager.say("Bluetooth audio sink is discoverable for "
+                mTextToSpeechManager.say(getString(R.string.tts_bt_discovery_enabled)
                         + DISCOVERABLE_TIMEOUT_MS
                         + " milliseconds. Look for a device named "
                         + ADAPTER_FRIENDLY_NAME);

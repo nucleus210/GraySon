@@ -1079,8 +1079,7 @@ public class BluetoothActivityFragment extends Fragment implements View.OnClickL
         return Environment.MEDIA_MOUNTED.equals(state);
     }
 
-
-//------------------------------------------------------------------------------------------------//------------------------------------------------
+//------------------------------------------------------------------------------------------------//
     /**
      * REMOTE CONTROL Broadcast receiver. Receive message form Remote control fragment
      * to handle user actions. Also send data to Server via local Bluetooth service.
@@ -1240,5 +1239,4 @@ public class BluetoothActivityFragment extends Fragment implements View.OnClickL
             }
         }
     };
-
 }

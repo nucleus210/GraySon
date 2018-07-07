@@ -502,7 +502,7 @@ public class VideoPlayerActivity extends Fragment implements
     public void nextVideo() {
         int requestAudioFocusResult = mAudioManager.requestAudioFocus(mAudioFocusRequest);
         if (requestAudioFocusResult == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-            if (VIDEO_POS == 0) {
+            if (VIDEO_POS == 0 && mVideoList.size() > 1) {
                 startVideo(mVideoList.get(VIDEO_POS + 1).get_videoUri(),
                         mVideoList.get(VIDEO_POS + 1).get_title());
                 VIDEO_POS++;

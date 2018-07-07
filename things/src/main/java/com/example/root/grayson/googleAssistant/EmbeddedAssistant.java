@@ -257,7 +257,7 @@ public class EmbeddedAssistant {
                             mConversationCallback.onResponseFinished();
                         }
                     });
-                    // TODO ------------------------------------------------------------------------
+
                     if (mGoogleAssistant.contains("ok goodbye")
                             | mGoogleAssistant.contains("goodbye")
                             | mGoogleAssistant.contains("system back")
@@ -801,6 +801,4 @@ public class EmbeddedAssistant {
         // You can also include some extra data.
         LocalBroadcastManager.getInstance(mContext).sendBroadcast(intent);
     }
-
-
 }

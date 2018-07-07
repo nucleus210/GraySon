@@ -63,15 +63,72 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="todo">TODO</string>
-    <string name="google_conversation_start">Okay Google</string>
-    <string name="kws_caption">To start demonstration say \"ok gray\".</string>
     <string name="bluetooth_on_off">Bluetooth on/off</string>
-    <string name="bluetooth_discovery">Bluetooth discovery</string>
     <string name="bluetooth_search">Bluetooth search</string>
+    <string name="bluetooth_discovery">Bluetooth discovery</string>
+    <string name="toast_bt_pairing">Trying to pair with..</string>
+    <string name="toast_bt_enable">enable Bluetooth</string>
     <string name="power">power</string>
 
     <!-- API Account -->
-     <!-- TODO Create login screen -->
     <string name="TYPE_EMAIL_HERE">email_address</string>
     <string name="ACCOUNT_PASSWORD">account password</string>
+    <string name="api_download_error">Error downloading files from FireBase</string>
+    <string name="api_download_complete">Downloading files from FireBase complete</string>
+
+    <!-- Recognizer Action TTS say -->
+    <string name="kws_caption">To start demonstration say \"okay gray\".</string>
+    <string name="google_conversation_start">Okay Google</string>
+    <string name="action_start_assistant">Starting Google Assistant</string>
+    <string name="recognizer_time_out">Timeout!</string>
+    <string name="action_download_complete">Download complete</string>
+    <string name="action_start_music_player">I\'m starting music player</string>
+    <string name="action_playing_music">I\'m playing music</string>
+    <string name="action_stop_music">I\'m stop music</string>
+    <string name="action_next_song">Playing next song</string>
+    <string name="action_previous_song">Playing previous song</string>
+    <string name="action_stop_music_player">Stop music player</string>
+    <string name="action_play_video">I\'m playing video</string>
+    <string name="action_stop_video">I\'m stop video</string>
+    <string name="action_previous_video">I\'m playing previous video</string>
+    <string name="action_next_video">I\'m playing next video</string>
+    <string name="action_show_menu">I\'m showing menu</string>
+    <string name="action_select_menu">Selecting</string>
+    <string name="action_menu_next">menu next</string>
+    <string name="action_menu_back">menu back</string>
+    <string name="action_menu_previous">menu previous</string>
+    <string name="action_hide_menu">I\'m hiding menu</string>
+    <string name="action_play_youtube">I\'m playing Youtube</string>
+    <string name="action_bluetooth_on">Turn Bluetooth on</string>
+    <string name="action_bluetooth_off">Turn Bluetooth off</string>
+    <string name="action_bluetooth_discovery">Turn Bluetooth discovery for 30 seconds</string>
+    <string name="action_bluetooth_search">Scanning for unpaired devices</string>
+    <string name="action_api_download">I am hunger for files. I\'m will eat em all</string>
+    <string name="action_show_day_photo">Showing day photo</string>
+    <string name="action_stop_day_photo">Stop day photo</string>
+    <string name="action_connect_cloud">Connecting Cloud Storage</string>
+    <string name="action_sing_google_account">Sing In Google account</string>
+    <string name="action_sing_out_google_account">Sing Out Google account</string>
+    <string name="action_show_weather">okay i am starting weather forecast</string>
+    <string name="action_change_weather_city">I\'m changing weather city</string>
+    <string name="action_file_uploading">Starting file uploading.</string>
+    <string name="action_lights_on">Turning light on</string>
+    <string name="action_lights_off">Turning light off</string>
+    <string name="action_red_lights">Turning light red</string>
+    <string name="action_green_lights">Turning light green</string>
+    <string name="action_blue_lights">Turning light blue</string>
+    <string name="action_lights_auto">Automatic change lights colors</string>
+    <string name="action_weather_forecast">okay i am starting weather forecast</string>
+    <string name="action_turn_off">Again, okay I\'m turning off</string>
+    <string name="action_cloud_photo_download">I am hunger for files. I\'m will eat em all</string>
+    <string name="turn_on">Yaaaaaaaaahoooooo</string>
+    <string name="toast_bt_disabled">disable Bluetooth</string>
+    <string name="toast_bt_discovery">Discover enabled for 300 seconds</string>
+    <string name="tts_bt_discovery_enabled">Bluetooth audio sink is discoverable for</string>
+    <string name="tts_bt_ready">Bluetooth Adapter ready</string>
+    <string name="tts_bt_connect_to">Connected to</string>
+    <string name="tts_bt_disconnect">Disconnected from</string>
+    <string name="tts_bt_playing_audio">Playing audio</string>
+    <string name="tts_bt_stop_playing_audio">Stop playing audio</string>
+
 </resources>
